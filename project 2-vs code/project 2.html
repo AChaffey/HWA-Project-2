@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./project 2.css">
 </head>
 <body>
-    <div><h1>WELCOME TO THE MUSIC LIBRARY</h1></div>
+    <div><h1>WELCOME TO THE MUSIC LIBRARY</h1></div1>
 
     <form>
-        <div><h4>Please enter the infomation below</h4></div>
+        <div><h4>Please enter the infomation below to store your favourite songs</h4></div>
         <div class="mb-3">
             <label for="songName" class="form-label">Song name</label>
             <input type="text" class="form-control" id="songName" placeholder="Whats the song?">
@@ -27,10 +27,42 @@
             <input type="date" class="form-control" id="year">
           </div>
     </form>
-
-    <button id="get">GET</button>
-        <button id="post">Add</button>
-        <div id="results"></div>
+    <button id="post">Add (post)</button>
+    <div>
+    <table class="table table-bordered border-dark">
+      <thead>
+        <tr class="table-info border-dark">
+          <th scope="col">ID</th>
+          <th scope="col">Song Name</th>
+          <th scope="col">Artist</th>
+          <th scope="col">Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="table-light border-dark">1</th>
+          <td class="table-light border-dark">...</td>
+          <td class="table-light border-dark">...</td>
+          <td class="table-light border-dark">...</td>
+        </tr>
+        <tr>
+          <th scope="row" class="table-light border-dark">2</th>
+          <td class="table-light border-dark">...</td>
+          <td class="table-light border-dark">...</td>
+          <td class="table-light border-dark">...</td>
+        </tr>
+        <tr>
+          <th scope="row" class="table-light border-dark">3</th>
+          <td class="table-light border-dark">...</td>
+          <td class="table-light border-dark">...</td>
+          <td class="table-light border-dark">...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button id="View">update (update)</button>
+  <button id="Delete">Delete (Del)</button>
+  
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
