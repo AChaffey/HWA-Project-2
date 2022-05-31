@@ -1,18 +1,20 @@
 'use strict'
 
 let resultsDiv = document.querySelector("#results");
-let getBtn = document.querySelector("#get");
 let postBtn = document.querySelector("#post");
+let addsongName = 
+let addartist = 
+let addyear = 
 
 // HTTP Requests - Request/Response
 // Axios uses promises
 // We must handle the success, and the failure
 
 // GET - READ
-let getRequest = () => {
+let setup = () => {
     axios.get("http://localhost:8080/music/getAll")
         .then((response) => {
-            // console.log(response.data);
+    
             displayResult(response.data);
         })
         .catch((err) => {
@@ -22,14 +24,14 @@ let getRequest = () => {
 
 
 // POST - CREATE
-let postRequest = () => {
+let create = () => {
 
     let obj = {
-        "songName":"Baby",
-        "artist":"Justin Bieber",
-        "year":"2010"
+        "songName": addsongName,
+        "artist":addartist,
+        "year": addyear
     }
-
+    console.log(obj);
     axios.post("http://localhost:8080/music/create", obj)
         .then((response) => {
             console.log(response);
@@ -48,14 +50,10 @@ let displayResult = (data) => {
         const entryDiv = document.createElement("div");
         entryDiv.setAttribute("class", "entryDiv");
         const text = document.createTextNode(`ID: ${entry.id} | Song Name: ${entry.songName} | Artist: ${entry.artist} | Year: ${entry.year}`);
-
-        // const img = document.createElement("img");
-        // img.setAttribute("src", entry.avatar);
-        // img.setAttribute("class", "avatars");
-
+        
         entryDiv.appendChild(text);
         resultsDiv.appendChild(entryDiv);
-        // resultsDiv.appendChild(img);
+    
     }
 }
 
