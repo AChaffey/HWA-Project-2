@@ -1,13 +1,14 @@
 'use strict'
 // Button
 let postBtn = document.querySelector("#post");
-let view = document.querySelector("#view");
+let view = document.querySelector("#Update");
 let remove = document.querySelector("#Delete");
 // Inputs
 let songName = document.querySelector("#songName");
 let artist = document.querySelector("#Artist");
 let releaseYear = document.querySelector("#year");
-let id = document.querySelector("#ID");
+let deleteId = document.querySelector("#ID");
+let updateId = document.querySelector("#ID1");
 // Divs
 let resultsDiv = document.querySelector("#results");
 // Form
@@ -52,9 +53,9 @@ let update = () => {
 
     let obj = {"songName": songName.value,
     "artist": artist.value,
-    "releaseYear": releaseYear.value,
+    "releaseYear": releaseYear.value
 }
-    axios.put(`http://localhost:8080/music/update/${id.value}`, obj)
+    axios.put(`http://localhost:8080/music/update/${updateId.value}`, obj)
         .then((response) => {
             readAll();
         })
@@ -72,7 +73,7 @@ let del = () => {
     "releaseYear": releaseYear.value,
 
 }
-    axios.delete(`http://localhost:8080/music/delete/${id.value}`)
+    axios.delete(`http://localhost:8080/music/delete/${deleteId.value}`)
         .then((response) => {
             
             readAll();
@@ -113,6 +114,6 @@ let displayResult = (data) => {
 }
 
 // Event Listeners
-
+view.addEventListener("click", update);
 postBtn.addEventListener("click", post, displayResult);
 remove.addEventListener("click", del);
