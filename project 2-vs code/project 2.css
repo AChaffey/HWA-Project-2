@@ -1,5 +1,16 @@
 body {
- background-color: rgb(128, 127, 127);   
+ background-color: rgb(128, 127, 127); 
+ font-family: Arial, Helvetica, sans-serif;
+ padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  
+
 }
 
 h1 {
@@ -8,23 +19,82 @@ h1 {
     
   
 }
-body {
-
-padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-}
 
 h4 {
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
-div mb-3  {
-    text-decoration-style: ;
+form  {
+    text-decoration-style: solid;
+    padding-bottom: 10px;
+    margin-top:100px;
+    
+}
+
+#post {
+   
+
+    margin-bottom:50px;
+    
+}
+
+#songName {
+overflow: hidden;
+
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  
+}
+
+
+#Artist { overflow: hidden;
+
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    
+  }
+  
+#year {
+    overflow: hidden;
+
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  
 }

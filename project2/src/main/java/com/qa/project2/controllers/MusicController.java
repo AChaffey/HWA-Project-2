@@ -48,6 +48,7 @@ public class MusicController {
 		// Create -> Post Request - @PostMapping
 		@PostMapping("/create")
 		public ResponseEntity<Music> create(@RequestBody Music user) {
+			System.out.print(user);
 			return new ResponseEntity<Music>(service.create(user), HttpStatus.CREATED);
 		}
 		

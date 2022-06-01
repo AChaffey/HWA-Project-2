@@ -11,31 +11,36 @@
   <link rel="stylesheet" href="./project 2.css">
 </head>
 
-<body>
+<body onload="readAll()">
+  
   <div>
     <h1>WELCOME TO THE MUSIC LIBRARY</h1>
     </div1>
 
-    <form>
+    <form id= "form">
       <div>
         <h4>Please enter the infomation below to store your favourite songs</h4>
       </div>
 
       <div id="results"></div>
+
       <div class="mb-3">
         <label for="songName" class="form-label">Song name</label>
         <input type="text" class="form-control" id="songName" placeholder="Whats the song?">
       </div>
+
       <div class="mb-3">
         <label for="Artist" class="form-label">Artist Name</label>
         <input type="text" class="form-control" id="Artist" placeholder="Who is the Artist?">
       </div>
+
       <div class="mb-3">
         <label for="year" class="form-label">Year of the song?</label>
         <input type="date" class="form-control" id="year">
       </div>
+
     </form>
-    <button id="post">Add (post)</button>
+    <div><button id="post">Add (post)</button></div>
     <div>
       <table class="table table-bordered border-dark">
         <thead>
@@ -47,38 +52,22 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row" class="table-light border-dark">1</th>
-            <td class="table-light border-dark">...</td>
-            <td class="table-light border-dark">...</td>
-            <td class="table-light border-dark">...</td>
-          </tr>
-          <tr>
-            <th scope="row" class="table-light border-dark">2</th>
-            <td class="table-light border-dark">...</td>
-            <td class="table-light border-dark">...</td>
-            <td class="table-light border-dark">...</td>
-          </tr>
-          <tr>
-            <th scope="row" class="table-light border-dark">3</th>
-            <td class="table-light border-dark">...</td>
-            <td class="table-light border-dark">...</td>
-            <td class="table-light border-dark">...</td>
-          </tr>
+                  
         </tbody>
       </table>
     </div>
-    <button id="View">update (update)</button>
+    
+    <button id="Update">update (update)</button>
     <button id="Delete">Delete (Del)</button>
+    <input type="text" id="ID">
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./Project 2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"></script>
-
+<script src="./Project 2.js"></script>
 </body>
 
 </html>
