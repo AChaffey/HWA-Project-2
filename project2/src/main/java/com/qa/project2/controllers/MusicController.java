@@ -40,10 +40,6 @@ public class MusicController {
 			return new ResponseEntity<Music>(service.getById(id), HttpStatus.OK);
 		}
 		
-		@GetMapping("/getBysongName/{name}")
-		public ResponseEntity<List<Music>> getByFirstName(@PathVariable String name) {
-			return new ResponseEntity<List<Music>>(service.getByFirstName(name), HttpStatus.OK);
-		}
 		
 		// Create -> Post Request - @PostMapping
 		@PostMapping("/create")

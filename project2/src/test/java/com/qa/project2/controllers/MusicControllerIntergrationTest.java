@@ -38,10 +38,10 @@ public class MusicControllerIntergrationTest {
 
 	@Test
 	public void createTest() throws Exception {
-		Music input = new Music("baby", "Justin Bieber", "2010");
+		Music input = new Music("Baby", "Justin Bieber", "2010");
 		String inputAsJSON = mapper.writeValueAsString(input);
 
-		Music output = new Music(2L, "baby", "Justin Bieber", "2010");
+		Music output = new Music(2L, "Baby", "Justin Bieber", "2010");
 		String outputAsJSON = mapper.writeValueAsString(output);
 
 		mvc.perform(post("/music/create").contentType(MediaType.APPLICATION_JSON).content(inputAsJSON))
@@ -51,7 +51,7 @@ public class MusicControllerIntergrationTest {
 
 	@Test
 	public void getAllTest() throws Exception {
-		Music user = new Music(1L, "baby", "Justin Bieber", "2010");
+		Music user = new Music(1L, "Baby", "Justin Bieber", "2010");
 		List<Music> output = new ArrayList<>();
 		output.add(user);
 
@@ -63,7 +63,7 @@ public class MusicControllerIntergrationTest {
 
 	@Test
 	public void getByIdTest() throws Exception {
-		Music entry = new Music(1L, "baby", "Justin Bieber", "2010");
+		Music entry = new Music(1L, "Baby", "Justin Bieber", "2010");
 		String entryAsJSON = this.mapper.writeValueAsString(entry);
 
 		mvc.perform(get("/music/getById/1").contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
@@ -72,8 +72,8 @@ public class MusicControllerIntergrationTest {
 
 	@Test
 	public void updateTest() throws Exception {
-		Music entry = new Music("baby", "Justin Bieber", "2010");
-		Music result = new Music(1L, "baby", "Justin Bieber", "2010");
+		Music entry = new Music("Baby", "Justin Bieber", "2010");
+		Music result = new Music(1L, "Baby", "Justin Bieber", "2010");
 
 		String entryAsJSON = this.mapper.writeValueAsString(entry);
 		String resultAsJSON = this.mapper.writeValueAsString(result);

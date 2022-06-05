@@ -1,1 +1,1 @@
-INSERT INTO "music" ("songName", "artist", "release_year") VALUES ('Baby', 'Justin_Bieber', '2010');
+INSERT INTO music (song_name, artist, release_year) VALUES ('Baby', 'Justin Bieber', '2010');
