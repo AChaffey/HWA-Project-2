@@ -22,6 +22,8 @@
         <h4>Please enter the infomation below to store your favourite songs</h4>
       </div>
 
+      <div id="results"></div>
+
       <div class="mb-3">
         <label for="songName" class="form-label">Song name</label>
         <input type="text" class="form-control" id="songName" placeholder="Whats the song?">
@@ -38,12 +40,8 @@
       </div>
 
     </form>
-    <div class="d-grid gap-2"><button class="btn btn-primary" type="button" id="post">Add to table below</button></div> 
-    
-    <div><button class="btn btn-primary" id="Update">Update</button>
-    <input type="text" id="ID1" placeholder ="Insert the ID you wish to Update, then insert the updated infomation into the boxes above the 'Add' button then click the 'Update' button to the left." style="width: 113%"></div>
-
-    <div id="table">
+    <div class="d-grid gap-2"><button class="btn btn-primary" type="button" id="post">Add (post)</button></div> 
+    <div>
       <table class="table table-bordered border-dark">
         <thead>
           <tr class="table-info border-dark">
@@ -59,10 +57,11 @@
       </table>
     </div>
     
-    
+    <div><button id="Update">Update</button>
+    <input type="text" id="ID1" placeholder="Insert the ID you wish to Update, then add the updated infomation into the boxes above the add button then click the update button to the left. "></div>
 
-    <button class="btn btn-primary" id="Delete">Delete</button>
-    <input type="text" id="ID" placeholder="Insert the ID you wish to Delete from the table above." style="width: 42%">
+    <button id="Delete">Delete</button>
+    <input type="text" id="ID" placeholder="Insert the ID you wish to Delete">
     
 
 

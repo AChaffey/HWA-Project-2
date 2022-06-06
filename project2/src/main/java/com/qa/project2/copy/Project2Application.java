@@ -1,4 +1,4 @@
-package src.main.java.com.qa.project2;
+package src.main.java.com.qa.project2.copy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
