@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./project 2.css">
+</head>
+
+<body onload="readAll()">
+  
+  <div>
+    <h1>WELCOME TO THE MUSIC LIBRARY</h1>
+    </div1>
+
+    <form id= "form">
+      <div>
+        <h4>Please enter the infomation below to store your favourite songs</h4>
+      </div>
+
+      <div id="results"></div>
+
+      <div class="mb-3">
+        <label for="songName" class="form-label">Song name</label>
+        <input type="text" class="form-control" id="songName" placeholder="Whats the song?">
+      </div>
+
+      <div class="mb-3">
+        <label for="Artist" class="form-label">Artist Name</label>
+        <input type="text" class="form-control" id="Artist" placeholder="Who is the Artist?">
+      </div>
+
+      <div class="mb-3">
+        <label for="year" class="form-label">Year of the song?</label>
+        <input type="date" class="form-control" id="year">
+      </div>
+
+    </form>
+    <div class="d-grid gap-2"><button class="btn btn-primary" type="button" id="post">Add (post)</button></div> 
+    <div>
+      <table class="table table-bordered border-dark">
+        <thead>
+          <tr class="table-info border-dark">
+            <th scope="col">ID</th>
+            <th scope="col">Song Name</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+                  
+        </tbody>
+      </table>
+    </div>
+    
+    <div><button id="Update">Update</button>
+    <input type="text" id="ID1" placeholder="Insert the ID you wish to Update, then add the updated infomation into the boxes above the add button then click the update button to the left. "></div>
+
+    <button id="Delete">Delete</button>
+    <input type="text" id="ID" placeholder="Insert the ID you wish to Delete">
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+<script src="./Project 2.js"></script>
+</body>
+
+</html>
