@@ -55,14 +55,14 @@ step 7 - For this project youre going to utilise CSS, HTML and JavaScript, this 
 **Deployment**
 Read this application it must be maven packaged using SpringBoot. you can do this by opening up your git bash on your folder which you have linked with GitHub. you can then type the command “mvn clean package” on this will build your application. it is worth noting that if your build is unsuccessful this is likely to do with testing.
 **Built With**
-•	Maven - Dependency Management
-•	[Java] (https://www.oracle.com/java/) source code software language
-•	[Git] (https://git-scm.com/) terminal
-•	[Github] (https://github.com)- Software hoster
-•	[Jira] (https://www.atlassian.com/software/jira) -User stories
-•	[MySQL Server] (https://www.mysql.com/) – database server
-•	[Junit] (https://junit.org/junit4/) – Test runner
-•	[SpringBoot]- tool that makes developing web application and microservices with Spring Framework faster and easier through three core capabilities: Autoconfiguration. An opinionated approach to configuration. The ability to create standalone applications.
+* Bullet list*	Maven - Dependency Management
+* Bullet list 2*	[Java] (https://www.oracle.com/java/) source code software language
+* Bullet list	3* [Git] (https://git-scm.com/) terminal
+* Bullet list	4* [Github] (https://github.com)- Software hoster
+* Bullet list 5* [Jira] (https://www.atlassian.com/software/jira) -User stories
+* Bullet list	6* [MySQL Server] (https://www.mysql.com/) – database server
+* Bullet list	7* [Junit] (https://junit.org/junit4/) – Test runner
+* Bullet list	8* [SpringBoot]- tool that makes developing web application and microservices with Spring Framework faster and easier through three core capabilities: Autoconfiguration. An opinionated approach to configuration. The ability to create standalone applications.
 
 **Screen Shots**
 ![Picture5- start of khanban](https://user-images.githubusercontent.com/103578276/172339668-113cfb8b-72c1-43e5-bf9b-7a06087154fc.png)
