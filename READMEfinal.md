@@ -55,7 +55,7 @@ step 7 - For this project youre going to utilise CSS, HTML and JavaScript, this 
 **Deployment**
 Read this application it must be maven packaged using SpringBoot. you can do this by opening up your git bash on your folder which you have linked with GitHub. you can then type the command “mvn clean package” on this will build your application. it is worth noting that if your build is unsuccessful this is likely to do with testing.
 **Built With**
-* Bullet list*	Maven - Dependency Management
+* Maven - Dependency Management
 * Bullet list 2*	[Java] (https://www.oracle.com/java/) source code software language
 * Bullet list	3* [Git] (https://git-scm.com/) terminal
 * Bullet list	4* [Github] (https://github.com)- Software hoster
